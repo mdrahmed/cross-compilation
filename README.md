@@ -2,10 +2,17 @@
 1. Open `/etc/apt/sources.list` file with sudo</br>
 2. Add following for ubuntu-18,</br>
 ```
-# LLVM-14 & CLANG-14
+# LLVM-14 & CLANG-14 in Ubuntu-18
 deb http://apt.llvm.org/bionic/ llvm-toolchain-bionic-14 main
 deb-src http://apt.llvm.org/bionic/ llvm-toolchain-bionic-14 main
 ```
+For Ubuntu-20,</br>
+```
+# LLVM-14 & CLANG-14 in Ubuntu-20
+deb http://apt.llvm.org/focal/ llvm-toolchain-focal-14 main
+deb-src http://apt.llvm.org/focal/ llvm-toolchain-focal-14 main
+```
+
 3. Save the file</br>
 4. Run following commands,</br>
 ```
