@@ -1,4 +1,4 @@
-Install LLVM-14 and clang-14 from Binary with this,</br>
+# Install LLVM-14 and clang-14 from Binary with this,</br>
 1. Open /etc/apt/sources.list file with sudo</br>
 2. Add following for ubuntu-18,</br>
 ```
@@ -53,12 +53,12 @@ sudo apt install libsfgcc1-armhf-cross
 sudo apt install libstdc++6-armhf-cross
 sudo apt install libstdc++6-dev-armhf-cross # but this was not installed
 ```
-# got this error while installing libstdc++6-dev
+#### got this error while installing libstdc++6-dev
 Reading state information... Done
 E: Unable to locate package libstdc++6-dev-armhf-cross
 E: Couldn't find any package by regex 'libstdc++6-dev-armhf-cross'
 ```
-#Then installed this one,</br>
+#### Then installed this one,</br>
 `sudo apt install libstdc++-7-dev-armhf-cross`
 
 Now, simple run the command,</br>
