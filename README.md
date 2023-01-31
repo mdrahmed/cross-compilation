@@ -1,5 +1,5 @@
 # Install LLVM-14 and clang-14 from Binary with this,</br>
-1. Open /etc/apt/sources.list file with sudo</br>
+1. Open `/etc/apt/sources.list` file with sudo</br>
 2. Add following for ubuntu-18,</br>
 ```
 # LLVM-14 & CLANG-14
