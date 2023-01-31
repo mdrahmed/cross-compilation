@@ -1,16 +1,20 @@
 Install LLVM-14 and clang-14 from Binary with this,</br>
 1. Open /etc/apt/sources.list file with sudo</br>
 2. Add following for ubuntu-18,</br>
-# 14</br>
-deb http://apt.llvm.org/bionic/ llvm-toolchain-bionic-14 main</br>
-deb-src http://apt.llvm.org/bionic/ llvm-toolchain-bionic-14 main</br>
+```
+# LLVM-14 & CLANG-14
+deb http://apt.llvm.org/bionic/ llvm-toolchain-bionic-14 main
+deb-src http://apt.llvm.org/bionic/ llvm-toolchain-bionic-14 main
+```
 3. Save the file</br>
 4. Run following commands,</br>
-wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key|sudo apt-key add -</br>
-sudo apt update</br>
-sudo apt upgrade</br>
-sudo apt-get install clang-14 llvm-14</br>
-
+```
+wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key|sudo apt-key add -
+sudo apt update
+sudo apt upgrade
+sudo apt-get install clang-14 llvm-14
+```
+</br>
 
 Might get this error,</br></br>
 ```
@@ -32,14 +36,15 @@ The following packages have unmet dependencies:
 E: Unable to correct problems, you have held broken packages.
 ```
 
-Simply run this,
+Simply run this,</br>
 `sudo add-apt-repository ppa:ubuntu-toolchain-r/test`
 
 For Cross-compilation, 
 The following cmd will compile for arm32,
-clang++-14 --target=arm-linux-gnueabihf gcd.cpp -o gcd_arm
+`clang++-14 --target=arm-linux-gnueabihf gcd.cpp -o gcd_arm`
 
 But need these pkgs,
+```
 sudo apt install gcc-arm-linux-gnueabihf
 sudo apt install gcc-multilib-arm-linux-gnueabihf
 sudo apt install binutils-arm-linux-gnueabihf
@@ -47,19 +52,21 @@ sudo apt install libgcc1-armhf-cross
 sudo apt install libsfgcc1-armhf-cross
 sudo apt install libstdc++6-armhf-cross
 sudo apt install libstdc++6-dev-armhf-cross # but this was not installed
+```
 # got this error while installing libstdc++6-dev
 Reading state information... Done
 E: Unable to locate package libstdc++6-dev-armhf-cross
 E: Couldn't find any package by regex 'libstdc++6-dev-armhf-cross'
+```
+#Then installed this one,</br>
+`sudo apt install libstdc++-7-dev-armhf-cross`
 
-#Then installed this one,
-sudo apt install libstdc++-7-dev-armhf-cross
+Now, simple run the command,</br>
+`clang++-14 --target=arm-linux-gnueabihf gcd.cpp -o gcd_arm`
+</br>
 
-Now, simple run the command,
-clang++-14 --target=arm-linux-gnueabihf gcd.cpp -o gcd_arm
-
-If this doesn't work, then install this pkg,
-sudo apt-get install g++-multilib
+If this doesn't work, then install this pkg,</br>
+`sudo apt-get install g++-multilib`
 
 
 This will work.
