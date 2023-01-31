@@ -1,20 +1,20 @@
-Install LLVM-14 and clang-14 from Binary with this,
-1. Open /etc/apt/sources.list file with sudo
-2. Add following for ubuntu-18,
-# 14
-deb http://apt.llvm.org/bionic/ llvm-toolchain-bionic-14 main
-deb-src http://apt.llvm.org/bionic/ llvm-toolchain-bionic-14 main
-3. Save the file
-4. Run following commands,
-wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key|sudo apt-key add -
-sudo apt update
-sudo apt upgrade
-sudo apt-get install clang-14 llvm-14
+Install LLVM-14 and clang-14 from Binary with this,</br>
+1. Open /etc/apt/sources.list file with sudo</br>
+2. Add following for ubuntu-18,</br>
+# 14</br>
+deb http://apt.llvm.org/bionic/ llvm-toolchain-bionic-14 main</br>
+deb-src http://apt.llvm.org/bionic/ llvm-toolchain-bionic-14 main</br>
+3. Save the file</br>
+4. Run following commands,</br>
+wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key|sudo apt-key add -</br>
+sudo apt update</br>
+sudo apt upgrade</br>
+sudo apt-get install clang-14 llvm-14</br>
 
 
-Might get this error,
+Might get this error,</br></br>
 
-The following packages have unmet dependencies:
+The following packages have unmet dependencies:</br>
  clang-14 : Depends: libclang-cpp14 (>= 1:14.0.6~++20230111091309+f28c006a5895) but it is not going to be installed</br>
             &emsp;&emsp;Depends: libgcc-s1 (>= 3.0) but it is not installable</br>
             Depends: libllvm14 but it is not going to be installed
