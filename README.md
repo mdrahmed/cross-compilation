@@ -68,8 +68,11 @@ Reading state information... Done
 E: Unable to locate package libstdc++6-dev-armhf-cross
 E: Couldn't find any package by regex 'libstdc++6-dev-armhf-cross'
 ```
-#### Then installed this one,</br>
+#### Then installed this one for ubuntu-18,</br>
 `sudo apt install libstdc++-7-dev-armhf-cross`
+#### For Ubuntu-20 it will be different,</br>
+`sudo apt install libstdc++-8-dev-armhf-cross`</br>
+check here [https://packages.ubuntu.com/search?keywords=dev-armhf-cross](https://packages.ubuntu.com/search?keywords=dev-armhf-cross&searchon=names&suite=focal&section=all)
 
 Now, simple run the command,</br>
 `clang++-14 --target=arm-linux-gnueabihf gcd.cpp -o gcd_arm`
