@@ -1,6 +1,6 @@
 CLANG=clang++-14
 CPP_file=gcd.cpp
-Objects=ex ex-arm32
+Objects=ex-x86-64 ex-arm32
 
 all: ex-x86-64 ex-arm32
 
