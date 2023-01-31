@@ -38,7 +38,7 @@ E: Unable to correct problems, you have held broken packages.
 
 Simply run this,</br>
 `sudo add-apt-repository ppa:ubuntu-toolchain-r/test`
-### This will solve the dependency problem
+**__This will solve the dependency problem__**
 
 
 # For Cross-compilation, 
