@@ -16,7 +16,7 @@ Might get this error,
 
 The following packages have unmet dependencies:
  clang-14 : Depends: libclang-cpp14 (>= 1:14.0.6~++20230111091309+f28c006a5895) but it is not going to be installed</br>
-            Depends: libgcc-s1 (>= 3.0) but it is not installable
+            &emsp;&emsp;Depends: libgcc-s1 (>= 3.0) but it is not installable</br>
             Depends: libllvm14 but it is not going to be installed
             Depends: libstdc++6 (>= 11) but 8.4.0-1ubuntu1~18.04 is to be installed
             Depends: libclang-common-14-dev (= 1:14.0.6~++20230111091309+f28c006a5895-1~exp1~20230111091340.182) but it is not going to be installed
