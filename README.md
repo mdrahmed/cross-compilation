@@ -53,7 +53,8 @@ sudo apt install libsfgcc1-armhf-cross
 sudo apt install libstdc++6-armhf-cross
 sudo apt install libstdc++6-dev-armhf-cross # but this was not installed
 ```
-#### got this error while installing libstdc++6-dev
+#### Got this error while installing libstdc++6-dev
+```
 Reading state information... Done
 E: Unable to locate package libstdc++6-dev-armhf-cross
 E: Couldn't find any package by regex 'libstdc++6-dev-armhf-cross'
