@@ -36,9 +36,9 @@ The following packages have unmet dependencies:
 E: Unable to correct problems, you have held broken packages.
 ```
 
-Simply run this,</br>
+Simply run this, **__This will solve the dependency problem__**</br>
 `sudo add-apt-repository ppa:ubuntu-toolchain-r/test`
-**__This will solve the dependency problem__**
+
 
 
 # For Cross-compilation, 
