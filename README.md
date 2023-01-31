@@ -38,8 +38,10 @@ E: Unable to correct problems, you have held broken packages.
 
 Simply run this,</br>
 `sudo add-apt-repository ppa:ubuntu-toolchain-r/test`
+### This will solve the dependency problem
 
-For Cross-compilation, 
+
+# For Cross-compilation, 
 The following cmd will compile for arm32,
 `clang++-14 --target=arm-linux-gnueabihf gcd.cpp -o gcd_arm`
 
